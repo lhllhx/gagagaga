@@ -1,0 +1,7 @@
+{
+    "name": "gagagaga",
+    "description": "Auto sign in your gaga",
+    "keywords": ["gaga"],
+    "repository": "https://github.com/lhllhx/gagaheroku",
+    "stack": "container"
+}
