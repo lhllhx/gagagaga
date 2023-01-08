@@ -2,6 +2,7 @@ FROM debian
 COPY app.py .
 COPY a.sh .
 RUN apt-get update && apt-get install -y wget curl tar sudo ca-certificates screen
+RUN apt-get install libxcb-randr0-dev libxcb-xtest0-dev libxcb-xinerama0-dev libxcb-shape0-dev libxcb-xkb-dev -y
 RUN apt-get install -y python3-pip
 RUN pip3 install --upgrade pip
 RUN pip3 install flask
