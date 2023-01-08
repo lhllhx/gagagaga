@@ -9,5 +9,5 @@ RUN pip3 install flask
 RUN curl -o app-linux-amd64.tar.gz https://assets.coreservice.io/public/package/22/app/1.0.3/app-1_0_3.tar.gz && tar -zxf app-linux-amd64.tar.gz && rm -f app-linux-amd64.tar.gz && app-linux-amd64//app service install
 RUN chmod +x a.sh
 RUN wget https://updates.peer2profit.app/peer2profit_0.48_amd64.deb
-RUN dpkg -i peer2profit_0.48_amd64.deb
+#RUN dpkg -i peer2profit_0.48_amd64.deb
 CMD ./a.sh
