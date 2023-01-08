@@ -1,7 +1,7 @@
 FROM debian
 COPY app.py .
 COPY a.sh .
-RUN apt-get update && apt-get install -y curl tar sudo ca-certificates screen
+RUN apt-get update && apt-get install -y wget curl tar sudo ca-certificates screen
 RUN apt-get install -y python3-pip
 RUN pip3 install --upgrade pip
 RUN pip3 install flask
